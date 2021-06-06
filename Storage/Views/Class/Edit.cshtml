@@ -1,0 +1,29 @@
+﻿@using Storage.Models
+@model Storage.Models.Class
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Create</h2>
+        <form method="post" enctype="multipart/form-data" asp-action="Edit" asp-route-id="@Model.ClassID">
+            <div class="form-group">
+                <label for="disabledInput" asp-for="ClassID"></label>
+                <input asp-for="ClassID" class="form-control" id="disabledInput" type="text" disabled>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="ClassName" for="inputdefault"></label>
+                <input asp-for="ClassName" class="form-control" id="inputdefault" type="text">
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    </div>
+</body>
+</html>

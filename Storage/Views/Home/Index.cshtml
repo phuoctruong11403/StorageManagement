@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PhuocTruongWebApp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/Index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        @Html.Partial("~/Views/Shared/NavBar.cshtml")
+    </div>
+    <div class="jumbotron text-center">
+        <h1>Storage Web App</h1>
+        <p>Adding product to your database for management purposes</p>
+        <form class="form-inline">
+        </form>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>About The App</h2>
+                <h4>
+                    This app is for adding and managing products or items in a storage. Also it can be used with commercial web page to manage online stores and checking for status of storage in each store.
+
+                </h4>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-signal logo"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Services Section) -->
+    <div class="container-fluid text-center bg-grey">
+        <h2>SERVICES</h2>
+        <h4>What we offer</h4>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-off"></span>
+                <h4>Add Croducts</h4>
+                <p>Adding product to storage</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-heart"></span>
+                <h4>Add Categories</h4>
+                <p>Add more categories</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-lock"></span>
+                <h4>Manage Products</h4>
+                <p>Show all products in the storage</p>
+            </div>
+            <div class="col-sm-3">
+                <span class="glyphicon glyphicon-leaf"></span>
+                <h4>Manage Categories</h4>
+                <p>Show all categories</p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+
+</body>
+</html>
